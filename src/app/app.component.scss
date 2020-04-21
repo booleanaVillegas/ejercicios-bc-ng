@@ -1,0 +1,47 @@
+@mixin responsive{
+  @media only screen and (max-width: 769px){
+    width: 100vw;
+  padding: 15px;
+  }
+}
+
+@mixin full-screen{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+$sublte-p: lightgray;
+
+.app-container {
+  @include full-screen();
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  font-size: 22px;
+  margin: 20px;
+}
+
+img {
+  object-fit: cover;
+
+  &.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+
+p {
+  &.desc {
+    color: $sublte-p;
+    text-align: justify;
+    width: 500px;
+    @include responsive;
+  }
+
+}
+

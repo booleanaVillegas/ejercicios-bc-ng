@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rick-biography"
+    }
+  },
+  "defaultProject": "rick-biography",
+  "cli": {
+    "analytics": false
+  }
 }
